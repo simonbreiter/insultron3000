@@ -1,0 +1,36 @@
+#!/bin/sh
+
+insult=(
+    "If you were twice as smart, you'd still be stupid."
+    "I could eat a bowl of alphabet soup and shit out a smarter statement than that."
+    "You are proof that evolution can go in reverse."
+    "Well I could agree with you, but then we’d both be wrong."
+    "Were you born this stupid or did you take lessons?"
+    "Hey, your village called, they want their idiot back."
+    "You’re as useful as a knitted condom."
+    "Calling you an idiot would be an insult to all stupid people."
+    "Shock me, type something intelligent."
+    "If I wanted to kill myself I'd climb your ego and jump to your IQ."
+    "If you spoke your mind, you'd be speechless."
+    "Some drink from the fountain of knowledge; you only gargled."
+    "I don't know what makes you so stupid, but it really works!"
+    "Aww, it's so cute when you try do things you don't understand."
+    "You're so dumb, your dog teaches you tricks."
+    "You're as useless as a screen door on a submarine."
+    "You are so stupid, you'd trip over a cordless phone."
+    "Keep coding, someday you'll code something intelligent!"
+    "Ordinarily people live and learn. You just live."
+    "I heard you took an IQ test and they said you're results were negative."
+    "Are you always an idiot, or just when I'm around?"
+    "Brains aren't everything. In your case they're nothing."
+    "You're as useful as an ashtray on a motorcycle."
+    "You do realize that I just tolerate you?"
+    "If you were any dumber I would have to water you twice a week."
+    "You must have a Teflon brain, because nothing sticks."
+    "If you had another brain, it would be lonely."
+    "You are as useful as a fart in a spacesuit."
+    )
+
+if [ $1 -ne 0 ]; then
+    say ${insult[$((RANDOM%${#insult[@]}))]}
+fi
